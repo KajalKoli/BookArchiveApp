@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using BookArchive.Models;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace BookArchive.Models
 {
     public class Book
     {
         //Author author = new Author();
-
+        [Key]
         public string ISBN { get; set; }
         public string name { get; set; }
         public string authorId { get; set; }
