@@ -17,6 +17,7 @@ namespace BookArchive.Models
     
         public BookArchiveContext() : base("name=BookArchiveContext")
         {
+
         }
 
         public System.Data.Entity.DbSet<BookArchive.Models.Book> Books { get; set; }
